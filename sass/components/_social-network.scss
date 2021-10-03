@@ -1,0 +1,49 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-basis: calc((100% - 30px) / 4);
+  width: 206px;
+  height: 44px;
+}
+
+.icon__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon__bgr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--icon-bgr-footer);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  .icon__item:hover &,
+  .icon__item:focus & {
+    background-color: var(--icon--bgc);
+  }
+}
+
+.icon__svg {
+  fill: var(--icon-first-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .icon__bgr:hover &,
+  .icon__bgr:focus & {
+    fill: var(--white-color);
+  }
+}
+
+.icon__svg--inverse {
+  fill: var(--white-color);
+}
