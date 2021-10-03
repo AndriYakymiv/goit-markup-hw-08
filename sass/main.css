@@ -313,7 +313,7 @@ ul {
   position: relative;
 }
 
-.header__item--mrrt {
+.header__item--margin {
   margin-right: 50px;
 }
 
@@ -1493,14 +1493,12 @@ ul {
 @media screen and (max-width: 1199px) {
   .footer__address {
     margin-bottom: 60px;
-    text-align: left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__address {
     margin-right: 70px;
-    text-align: left;
   }
 }
 
