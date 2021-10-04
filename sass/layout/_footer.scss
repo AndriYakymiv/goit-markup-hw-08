@@ -5,12 +5,15 @@
 }
 
 .footer__container {
-  text-align-last: left;
+  text-align-last: center;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align-last: left;
   }
 }
 
